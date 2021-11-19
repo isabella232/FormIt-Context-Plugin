@@ -17,10 +17,10 @@
 
             <img class="pluginIcon center" src="./assets/images/u1.png" />
 
-            <label>1. Click the   <img class="inlineIcon" src="./assets/images/setlocationicon.png" />   icon in the toolbar to set location.
+            <label>1. Klikněte na ikonu   <img class="inlineIcon" src="./assets/images/setlocationicon.png" />   v panelu nástrojů pro nastavení polohy.
             </label> 
 
-            <label>2. Adjust the square radius from the coordinates (in meters)</label>
+            <label>2. Upravte čtvercový rozsah souřadnic (v metrech)</label>
             
             <div class="range-wrap" style="--min:100; --max:1000;--step:50;">
                 <input id="Radius" class="range" type="range" value="100" min="100" max="1000" step="50" oninput="this.nextElementSibling.value = this.value" />
@@ -30,18 +30,18 @@
             <div class="columns">
 
                 <div class="column">
-                    <label>Latitude</label>
-                    <input id="Latitude" type="number" value="51.50101113819226" />
+                    <label>Zeměpisná šířka</label>
+                    <input id="Latitude" type="number" value="50.0796775" />
                 </div>
 
                 <div class="column">
-                    <label>Longitude</label>
-                    <input id="Longitude" type="number" value="-0.12618066018022342" />
+                    <label>Zeměpisná délka</label>
+                    <input id="Longitude" type="number" value="14.4298438" />
                 </div>
 
             </div> 
             
-            <input id="CreateButton" type="button" value="Create" />        
+            <input id="CreateButton" type="button" value="Vytvořit" />        
             
         </form>
 
