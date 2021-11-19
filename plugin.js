@@ -30,7 +30,7 @@
             // Get location info from FormIt        
             await updateCoordinatesFromLocation()
 
-            constants.notificationHandle = displayGeneralMessage('Retrieved coordinates from location settings')
+            constants.notificationHandle = displayGeneralMessage('Získané souřadnice z nastavení umístění')
 
             // Disable 'Create' button until current operation is completed
             document.getElementById("CreateButton").disabled = true
@@ -104,7 +104,7 @@
         query += "out;"
 
         const url = endpoint + query
-        displayWarningMessage(`Sending API request. Depending on the info and square radius, this could take up to ${constants.apiTimeout} seconds`)
+        displayWarningMessage(`Odeslán API požadavek. V závislosti na informacích a poloměru čtverce to může trvat až ${constants.apiTimeout} sekund`)
         
         const response = await fetch(url)
         if(response.ok)
@@ -197,7 +197,7 @@
             })
             FormIt.UndoManagement.EndState("Created geometry")
         }))
-        displaySuccessMessage(`Created ${(await geometryFormIt).length} features`)
+        displaySuccessMessage(`Vytvořeno ${(await geometryFormIt).length} prvků`)
     }
 
     const CoordinateLocationToFeet = (point, origin)=>
